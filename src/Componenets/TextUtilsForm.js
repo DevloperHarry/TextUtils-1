@@ -36,6 +36,7 @@ export default function TextUtilsForm(props) {
 <button className="btn btn-primary mx3 my-2"  disabled={text.length===0} onClick={handleonlow}>Convert To LowerCase</button>
 <button className="btn btn-primary mx-3 my-2"  disabled={text.length===0} onClick={handleonclr}>Clear</button>
 
+
 <div className="container" style={{color:props.mode==="light"? "black": "white"}}>
     <h2>text analyze</h2>
     <p>{text.split(" ").filter((elm)=>{return elm.length!==0}).length} Words and {text.length} Character</p>
